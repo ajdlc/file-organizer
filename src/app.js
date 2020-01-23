@@ -38,7 +38,7 @@ app.post("/folders", async (req, res) => {
     } catch (e) {
         if (e.errno === -4075) {
             res.status(400).send({
-                msg: "THe directory already exists!",
+                msg: "The directory already exists!",
                 e
             })
         }
@@ -47,6 +47,6 @@ app.post("/folders", async (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Listing on ${port}!`);
+    console.log(`Listening on ${port}!`);
     
 })
